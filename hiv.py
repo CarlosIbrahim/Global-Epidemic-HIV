@@ -262,7 +262,7 @@ yaxis=dict(
 			       (df_child['Indicator']=='Estimated number of annual AIDS-related deaths') &
 			      (df_child['Sex']=='Both') & (df_child['Year'] >1999)]
 		viz2=viz2[viz2.Age.isin(filter_age)]
-		fig33 = px.line(viz, x="Year", y="Value", color='Age',color_discrete_sequence=px.colors.sequential.RdBu)
+		fig33 = px.line(viz2, x="Year", y="Value", color='Age',color_discrete_sequence=px.colors.sequential.RdBu)
 		fig33.update_layout(title_text='Number of AIDS-related deaths among children and adolescents',plot_bgcolor="#FFF", xaxis=dict(
 
 							linecolor="#BCCCDC",  # Sets color of X-axis line
